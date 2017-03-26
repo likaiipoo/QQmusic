@@ -1,0 +1,16 @@
+<ion-view view-title="排行榜">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="o in bbb" ui-sref="rankinglist01({id:iii})" >
+          <img ng-src="http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_30_300_109994702.jpg?max_age=2592000">
+
+           <p>1.{{o[0].songname}}-{{o[0].singername}}</p>
+                <p>2.{{o[1].songname}}-{{o[1].singername}}</p>
+                <p>3.{{o[2].songname}}-{{o[2].singername}}</p>
+
+
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

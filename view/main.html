@@ -1,0 +1,17 @@
+<ion-header-bar class="bar-balanced" align-title="left">
+    <button class="button ion-ios-musical-note button-energized"></button>
+    <h1 class="title" id="lefttitle">QQ音乐</h1>
+    <button class="button" style="border-radius:25px;background-color:#149c5a">下载APP</button>
+</ion-header-bar>
+
+<ion-tabs class="tabs-top  tabs-light tabs-striped tabs-color-balanced">
+    <ion-tab  title="推荐" ui-sref="main.recommend">
+        <ion-nav-view name="recommend"></ion-nav-view>
+    </ion-tab>
+    <ion-tab  title="排行榜" ui-sref="main.rankinglist">
+        <ion-nav-view name="rankinglist"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="搜索" ui-sref="main.search">
+        <ion-nav-view name="search"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

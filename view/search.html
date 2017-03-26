@@ -1,0 +1,44 @@
+<ion-view view-title="搜索">
+    <ion-content>
+        <div class="item-input-inset" style="background-color:#f4f4f4;">
+            <form ng-submit="search()" style="width:100%">
+                <label class="item-input-wrapper light-bg" style="padding-left:0;">
+                    <i  class="button icon ion-search"  style="background-color:white;min-height:40px;min-width:40px;color:#f4f4f4"></i>
+
+                    <input type="search" placeholder="搜索歌曲、歌单、专辑" ng-model="searchObj.task" style="width:100%" >
+                </label>
+
+            </form>
+
+        </div>
+
+
+        <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat="item in items">
+                <img ng-src="{{item.albumpic_small}}">
+                <p>{{item.singername}}</p>
+                <p>{{item.songname}}</p>
+            </ion-item>
+        </ion-list>
+
+        <ion-list class="list-borderless">
+            <ion-item><h3 class="title">热门搜索</h3></ion-item>
+            <ion-item>
+             <span style="border:1px solid red;border-radius:16px;height:35px;line-height:35px;display:inline-block">梦想的声音</span>
+            <span  style="border:1px solid black;border-radius:16px;height:35px;line-height:35px;display:inline-block">全世界都在说东北话</span>
+                <span style="border:1px solid black;border-radius:12px;height:35px;line-height:35px;display:inline-block"  >PPAP</span>
+
+            </ion-item>
+       </ion-list>
+
+
+
+
+
+
+
+    </ion-content>
+
+
+
+</ion-view>
